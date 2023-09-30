@@ -20,3 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/dashboard', [App\Http\Controllers\DashboardController::class, 'index'])->name('dashboard');
+
+Route::get('admin/user-management', [App\Http\Controllers\UserManagementController::class, 'index'])->name('user-management');
+Route::get('admin/product-list', [App\Http\Controllers\ProductController::class, 'index'])->name('product-list');
+Route::get('admin/design', [App\Http\Controllers\DesignController::class, 'index'])->name('design');
+Route::get('admin/location', [App\Http\Controllers\LocationController::class, 'index'])->name('location');
+Route::get('admin/receiving', [App\Http\Controllers\ReceivingController::class, 'index'])->name('receiving');

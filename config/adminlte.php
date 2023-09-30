@@ -1,5 +1,7 @@
 <?php
 
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
+
 return [
 
     /*
@@ -313,7 +315,7 @@ return [
         ],
         [
             'text'        => 'Dashboard',
-            'url'         => 'admin/pages',
+            'url'         => 'dashboard',
             'icon'        => 'fa fa-tachometer',
             'label_color' => 'success',
         ],
@@ -323,54 +325,59 @@ return [
             'submenu' => [
                 [
                     'text' => 'User',
-                    'url'  => 'admin/user',
+                    'url'  => 'admin/user-management',
                     'icon' => 'fas fa-fw fa-user',
                 ],
                 [
-                    'text' => 'Produk',
-                    'url'  => 'admin/produk',
+                    'text' => 'Product',
+                    'url'  => 'admin/product-list',
                     'icon' => 'far fa-fw fa-file',
                 ],
                 [
-                    'text' => 'Lokasi',
-                    'url'  => 'admin/lokasi',
+                    'text' => 'Design',
+                    'url'  => 'admin/design',
                     'icon' => 'far fa-fw fa-file',
                 ],
-            ],
-        ],
-        [
-            'text'    => 'Penerimaan',
-            'icon'    => 'fas fa-fw fa-share',
-            'submenu' => [
                 [
-                    'text' => 'Pelabelan',
-                    'url'  => 'admin/pelabelan',
-                    'icon' => 'fas fa-fw fa-user',
-                ],
-                [
-                    'text' => 'Penerimaan Produk',
-                    'url'  => 'admin/penerimaan',
-                    'icon' => 'fas fa-fw fa-user',
-                ],
-                [
-                    'text' => 'Laporan Penerimaan',
-                    'url'  => 'admin/penerimaan/report',
+                    'text' => 'Location',
+                    'url'  => 'admin/location',
                     'icon' => 'far fa-fw fa-file',
                 ],
             ],
         ],
         [
-            'text'    => 'Pengiriman',
+            'text'    => 'Receiving',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => 'Pengiriman Produk',
-                    'url'  => 'admin/pengiriman',
+                    'text' => 'Labeling',
+                    'url'  => 'admin/Labeling',
                     'icon' => 'fas fa-fw fa-user',
                 ],
                 [
-                    'text' => 'Laporan Pengiriman',
-                    'url'  => 'admin/pengiriman/report',
+                    'text' => 'Receiving Product',
+                    'url'  => 'admin/receiving',
+                    'icon' => 'fas fa-fw fa-user',
+                ],
+                [
+                    'text' => 'Receiving Report',
+                    'url'  => 'admin/receiving/report',
+                    'icon' => 'far fa-fw fa-file',
+                ],
+            ],
+        ],
+        [
+            'text'    => 'Delivery',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => 'Delivery Product',
+                    'url'  => 'admin/delivery',
+                    'icon' => 'fas fa-fw fa-user',
+                ],
+                [
+                    'text' => 'Delivery Report',
+                    'url'  => 'admin/delivery/report',
                     'icon' => 'far fa-fw fa-file',
                 ],
             ],
@@ -390,7 +397,7 @@ return [
                     'icon' => 'far fa-fw fa-file',
                 ],
                 [
-                    'text' => 'Laporan Inventory',
+                    'text' => 'Inventory Report',
                     'url'  => 'admin/inventory/report',
                     'icon' => 'far fa-fw fa-file',
                 ],
@@ -534,8 +541,8 @@ return [
 
     'iframe' => [
         'default_tab' => [
-            'url' => null,
-            'title' => null,
+            'url' => "dashboard",
+            'title' => "Dashboard",
         ],
         'buttons' => [
             'close' => true,
