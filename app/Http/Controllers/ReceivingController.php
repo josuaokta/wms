@@ -13,18 +13,18 @@ class ReceivingController extends Controller
     public function index()
     {
         //
-        return view ("receiving");
+        return view ('pages/receiving/receiving');
     }
 
     public function labeling()
     {
         //
-        return view ("labeling");
+        return view ('pages/receiving/labeling');
     }
     public function report()
     {
         //
-        return view ("report");
+        return view ('pages/receiving/report');
     }
     /**
      * Show the form for creating a new resource.

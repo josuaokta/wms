@@ -1,1 +1,1 @@
-<p>product list</p>
+@livewire('product-table-view')

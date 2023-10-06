@@ -1,1 +1,1 @@
-<p>User Management</p>
+@livewire('users-table-view')

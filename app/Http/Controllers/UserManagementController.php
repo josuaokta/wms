@@ -9,6 +9,6 @@ class UserManagementController extends Controller
 {
     public function index()
     {
-        return view('user-management');
+        return view('pages/master/user-management');
     }
 }

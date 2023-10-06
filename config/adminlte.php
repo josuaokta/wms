@@ -351,7 +351,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Labeling',
-                    'url'  => 'admin/Labeling',
+                    'url'  => 'admin/receiving/labeling',
                     'icon' => 'fas fa-fw fa-user',
                 ],
                 [

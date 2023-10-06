@@ -13,6 +13,13 @@ class DeliveryController extends Controller
     public function index()
     {
         //
+        return view('pages/delivery/delivery');
+    }
+
+    public function report()
+    {
+        //
+        return view('pages/delivery/report');
     }
 
     /**

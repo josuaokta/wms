@@ -13,6 +13,19 @@ class InventoryController extends Controller
     public function index()
     {
         //
+        return view('pages/inventory/inventory');
+    }
+
+    public function moved()
+    {
+        //
+        return view('pages/inventory/moved');
+    }
+
+    public function report()
+    {
+        //
+        return view('pages/inventory/report');
     }
 
     /**
